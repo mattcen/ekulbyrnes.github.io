@@ -17,11 +17,11 @@
                 ('priorities.html', 'priorities', 'Priorities'),
                 ('resume.html', 'resume', 'Resume'),
               ] -%}
-              {% set active_page = active_page|default('index') -%}
-              {% block nav %}
-                {% for href, id, caption in navigation_bar %}
-                  <a href="{{ href|e }}" {% if id == active_page %} aria-current="page"{% endif %}>{{ caption|e }}</a>
-                {% endfor %}
+              {% set active_page = active_page|default('index') %}
+              {%- block nav -%}
+                {%- for href, id, caption in navigation_bar %}
+                  <a href="{{ href|e }}"{% if id == active_page %} aria-current="page"{% endif %}>{{ caption|e }}</a>
+                {%- endfor -%}
               {% endblock nav %}
             </nav>
 

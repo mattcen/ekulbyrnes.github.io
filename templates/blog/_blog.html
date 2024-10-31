@@ -1,9 +1,9 @@
 {% extends "_base.html" %}
-{% set active_page = 'blog' -%}
-{% block nav %}
-  {% for href, id, caption in navigation_bar %}
-                <a href="../{{ href|e }}" {% if id == active_page %} aria-current="page"{% endif %}>{{ caption|e }}</a>
-  {% endfor %}
+{% set active_page = 'blog' %}
+{%- block nav -%}
+  {%- for href, id, caption in navigation_bar %}
+                <a href="../{{ href|e }}"{% if id == active_page %} aria-current="page"{% endif %}>{{ caption|e }}</a>
+  {%- endfor -%}
 {% endblock nav %}
 {% block content %}
         <!-- content goes here -->
