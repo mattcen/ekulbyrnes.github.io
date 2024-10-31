@@ -1,25 +1,7 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Luke's Homepage</title>
-        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="index.html" aria-current="page">Home</a>
-                <a href="blog/index.html">Blog</>
-                <a href="about.html">About</a>
-                <a href="interests.html">Interests</a>
-                <a href="priorities.html">Priorities</a>
-                <a href="resume.html">Resume</a>
-            </nav>
-
-            <h1>Luke's Homepage</h1>
-        </header>
-
-        <main>
+{% extends "_base.html" %}
+{% block title %}Luke's Homepage{% endblock title %}
+{% block heading_one %}Luke's Homepage{% endblock heading_one %}
+{% block content %}
             <img src="images/avatar.jpg" alt="Photograph of webhost. Person is wearing glasses and a cobalt blue t-shirt with a graphic over a red jumper, with a pink lanyard that says 'GovHack'. Person is leaning on a tabletop bench." width="300">
 
             <p>My name is Luke. I enjoy making websites and teaching others to do the same.</p>
@@ -27,9 +9,4 @@
             <h2><code>ekulbyrnes</code></h2>
             <p>Luke uses the alias <code>ekulbyrnes</code> online</p>
 
-        </main>
-        <footer>
-            <p>Made with ❤️ and ☕️ by Luke Byrnes.</p>
-        </footer>
-    </body>
-</html>
+{% endblock content %}
