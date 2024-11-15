@@ -5,7 +5,7 @@
         <title>Luke's Homepage</title>
         <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
     </head>
-    <body>
+    <body itemscope itemtype="https://schema.org/Person">
         <header>
             <nav>
                 <a href="index.html">Home</a>
@@ -20,24 +20,24 @@
         </header>
 
         <main>
-            <img src="images/avatar.jpg" alt="Photograph of webhost. Person is wearing glasses and a cobalt blue t-shirt with a graphic over a red jumper, with a pink lanyard that says 'GovHack'. Person is leaning on a tabletop bench." width="300">
+            <img itemprop="image" src="images/avatar.jpg" alt="Photograph of webhost. Person is wearing glasses and a cobalt blue t-shirt with a graphic over a red jumper, with a pink lanyard that says 'GovHack'. Person is leaning on a tabletop bench." width="300">
 
-            <p>My name is Luke. I enjoy making websites and teaching others to do the same. I created ScoutHack to provide opportunities for young people to get an insight into real tech experiences while they have access to great mentors.</p>
+            <p>My name is Luke. I enjoy <span itemprop="seeks">making websites and teaching others to do the same</span>. I created ScoutHack to provide opportunities for young people to get an insight into real tech experiences while they have access to great mentors.</p>
 
-            <p>ScoutHack is a fun and exciting program that teaches young people to build a simple website using HTML, CSS, and Python. JavaScript is avoided at all costs - website development shouldn't start with torture.</p>
+            <p>ScoutHack is a fun and exciting program that teaches young people to build a simple website using <span itemprop="knowsAbout">HTML</span>, <span itemprop="knowsAbout">CSS</span>, and <span itemprop="knowsAbout">Python</span>. JavaScript is avoided at all costs - website development shouldn't start with torture.</p>
 
             <p class="notice">
                 <strong>Want to learn more about ScoutHack?</strong>
-                <br>Check out <a href="https://scouthack.com/" target="_blank">our website</a> to see what we're all about! ScoutHack is available for Scouts, Venturers, and Rovers who are active members of <a href="https://scoutsvictoria.com.au/" target="_blank">Scouts Victoria</a>.</p>
+                <br>Check out <a href="https://scouthack.com/" target="_blank">our website</a> to see what we're all about! <span itemprop="makesOffer"><span itemprop="brand">ScoutHack</span> is available for <span itemprop="knowsAbout">Scouts</span>, Venturers, and Rovers who are active members of <span itemprop="memberOf" itemscope itemtype="https://schema.org/Organization"><a itemprop="url" href="https://scoutsvictoria.com.au/" target="_blank"><span itemprop="name">Scouts Victoria</name></a></span></span>.</p>
 
-            <p>🐘 <a href="https://infosec.exchange/@ekulbyrnes">Get social with me on Mastodon</a></p>
+            <p>🐘 <a itemprop="sameAs" href="https://infosec.exchange/@ekulbyrnes">Get social with me on Mastodon</a></p>
 
             <h2><code>ekulbyrnes</code></h2>
-            <p>Luke uses the alias <code>ekulbyrnes</code> online</p>
+            <p>Luke uses the alias <code itemprop="alternateName">ekulbyrnes</code> online</p>
 
         </main>
         <footer>
-            <p>Made with ❤️ and ☕️ by Luke Byrnes.</p>
+            <p>Made with ❤️ and ☕️ by <span itemprop="name"><span itemprop="givenName">Luke</span> <span itemprop="familyName">Byrnes</span></span>.</p>
         </footer>
     </body>
 </html>
